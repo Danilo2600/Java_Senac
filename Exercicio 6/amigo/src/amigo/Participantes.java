@@ -1,15 +1,28 @@
 package amigo;
 
+import java.sql.Date;
+
 public class Participantes {
 	private String nome;
 	private String presente;
+	private Date aniversario;
 	
+	
+	
+	public Date getAniversario() {
+		return aniversario;
+	}
+	public void setAniversario(Date aniversario) {
+		this.aniversario = aniversario;
+	}
 	public String getNome() {
 		return nome;
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	
+	
 	public String getPresente() {
 		return presente;
 	}
@@ -18,7 +31,7 @@ public class Participantes {
 	}
 	@Override
 	public String toString() {
-		return " O sorteado foi " + nome + " e o presente" + presente ;
+		return " O sorteado foi " + nome + " e o presente " + presente + " e a data de aniversario " ;
 	}
 
 }
