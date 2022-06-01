@@ -5,6 +5,14 @@ public class Cliente {
 	private String nome;
 	private String telefone;
 	private int idade;
+	private int estrela;
+	
+	public int getEstrela() {
+		return estrela;
+	}
+	public void setEstrela(int estrela) {
+		this.estrela = estrela;
+	}
 	public String getNome() {
 		return nome;
 	}
@@ -25,8 +33,9 @@ public class Cliente {
 	}
 	@Override
 	public String toString() {
-		return "Cliente [nome=" + nome + ", telefone=" + telefone + ", idade=" + idade + "]";
+		return "Cliente [nome=" + nome + ", telefone=" + telefone + ", idade=" + idade + ", estrela=" + estrela + "]";
 	}
+	
 	
 	
 }
